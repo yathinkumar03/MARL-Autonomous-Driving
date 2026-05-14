@@ -1,0 +1,48 @@
+{
+    "episodes": 50,
+    "vehicles_count": 20,
+    "controlled_vehicles": 3,
+    "spawn_probability": 0.6,
+    "duration": 40,
+    "agents": [
+        {
+            "learning_rate": 0.001,
+            "gamma": 0.99,
+            "epsilon": 1.0,
+            "epsilon_decay": 0.995,
+            "collision_penalty": -50,
+            "lane_penalty": -20,
+            "speed_reward": 2,
+            "signal_reward": 2,
+            "safe_distance_reward": 3,
+            "overspeed_penalty": -4,
+            "emergency_brake_penalty": -10
+        },
+        {
+            "learning_rate": 0.0005,
+            "gamma": 0.95,
+            "epsilon": 1.0,
+            "epsilon_decay": 0.994,
+            "collision_penalty": -40,
+            "lane_penalty": -15,
+            "speed_reward": 3,
+            "signal_reward": 2,
+            "safe_distance_reward": 4,
+            "overspeed_penalty": -5,
+            "emergency_brake_penalty": -8
+        },
+        {
+            "learning_rate": 0.0008,
+            "gamma": 0.97,
+            "epsilon": 1.0,
+            "epsilon_decay": 0.996,
+            "collision_penalty": -60,
+            "lane_penalty": -25,
+            "speed_reward": 2,
+            "signal_reward": 3,
+            "safe_distance_reward": 5,
+            "overspeed_penalty": -6,
+            "emergency_brake_penalty": -12
+        }
+    ]
+}
